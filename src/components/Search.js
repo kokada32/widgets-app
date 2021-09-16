@@ -32,7 +32,8 @@ const Search = () => {
                     <div className="header">
                         {result.title}
                     </div>
-                    {result.snippet}
+                    {/* another way to render text to html in jsx, but possible for cross server script attacks */}
+                    <span dangerouslySetInnerHTML={{ __html: result.snippet }}></span> 
                 </div>
             </div>
         )
