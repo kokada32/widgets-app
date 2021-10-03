@@ -47,15 +47,7 @@ export default () => {
                     onSelectedChange={setSelected} 
                 /> : null
             }
-            { selected.value === "red" ?
-                <div style={{color: "red"}}>This text is red</div> :
-
-                selected.value === "green" ?
-                <div style={{color: "green"}}>This text is green</div> :
-                
-                selected.value === "blue" ?
-                <div style={{color: "blue"}}>This text is blue</div> : null
-            }
+            <div style={{color: `${selected.value}`}}>This text is {selected.value}</div>
         </div>
     );
 };
