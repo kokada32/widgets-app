@@ -30,7 +30,7 @@ const options = [
     {
         label: 'Japanese',
         value: 'ja'
-    },
+    }
 ];
 
 const Translate = () => {
